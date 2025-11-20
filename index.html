@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CH CONSULTORES S.R.L.</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            color: #222;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            height: 100vh;
+            background: 
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170')
+                center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 18px 36px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            background: #ffffff;
+            color: #000;
+            border-radius: 6px;
+        }
+
+        /* ---------- SECTIONS ---------- */
+        section {
+            padding: 80px 12%;
+            line-height: 1.6;
+        }
+
+        .services, .advantages, .process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        /* ---------- CONTACT ---------- */
+        .contact {
+            height: 100vh;
+            background: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        form {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        form input, form textarea {
+            margin-bottom: 20px;
+            padding: 16px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        form button {
+            padding: 18px;
+            font-size: 22px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- ========================================================= -->
+<!--                     HERO / MAIN SCREEN                    -->
+<!-- ========================================================= -->
+<section class="hero" id="hero">
+    <h1>CH CONSULTORES S.R.L.</h1>
+    <h2 style="max-width: 1000px;">
+        Consultoría empresarial y tecnológica, contabilidad integral y preparación fiscal. 
+        Acompañamos a empresas que necesitan orden, estrategia y claridad financiera para crecer de manera sostenible.
+    </h2>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Contactos
+    </button>
+</section>
+
+<!-- ========================================================= -->
+<!--                           ABOUT US                         -->
+<!-- ========================================================= -->
+<section id="about">
+    <h2>Quiénes Somos</h2>
+    <p>
+        En CH CONSULTORES S.R.L. ayudamos a organizaciones a tomar decisiones basadas en datos, optimizar procesos 
+        y estructurar una gestión financiera confiable. Nuestro enfoque combina experiencia técnica, visión estratégica 
+        y una comprensión profunda del entorno empresarial actual. Trabajamos junto a compañías que buscan profesionalizar 
+        sus operaciones y fortalecer su estructura fiscal y contable. Nos involucramos en cada etapa del proceso, ofreciendo 
+        soluciones personalizadas y medibles. Nuestro compromiso es generar resultados reales y de alto impacto.
+    </p>
+</section>
+
+<!-- ========================================================= -->
+<!--                           SERVICES                         -->
+<!-- ========================================================= -->
+<section id="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+        <div>
+            <h3>Consultoría Empresarial y Tecnológica</h3>
+            <p>
+                Analizamos la estructura operativa de tu empresa y desarrollamos estrategias para optimizar procesos 
+                mediante herramientas tecnológicas. Te ayudamos a mejorar la eficiencia interna, digitalizar operaciones 
+                y fortalecer la toma de decisiones basada en métricas reales.
+            </p>
+        </div>
+
+        <div>
+            <h3>Contabilidad Integral</h3>
+            <p>
+                Gestionamos la contabilidad de tu empresa con precisión, transparencia y orden. Nos encargamos de 
+                registros, reportes financieros y control administrativo, permitiendo que tu negocio opere con estabilidad 
+                y cumpla con todos los requisitos regulatorios.
+            </p>
+        </div>
+
+        <div>
+            <h3>Preparación y Planificación Fiscal</h3>
+            <p>
+                Brindamos asesoramiento para estructurar tus obligaciones impositivas de manera eficiente y segura. 
+                Elaboramos declaraciones, analizamos cargas fiscales y diseñamos estrategias para minimizar riesgos y 
+                optimizar el impacto tributario.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================= -->
+<!--                         ADVANTAGES                         -->
+<!-- ========================================================= -->
+<section id="advantages">
+    <h2>Por Qué Trabajar con Nosotros</h2>
+    <div class="advantages">
+        <div>
+            <h3>Enfoque Personalizado</h3>
+            <p>
+                Diseñamos soluciones a medida según el tamaño, necesidades y desafíos reales de tu empresa, evitando 
+                enfoques genéricos y priorizando resultados específicos.
+            </p>
+        </div>
+
+        <div>
+            <h3>Experiencia Multidisciplinaria</h3>
+            <p>
+                Nuestro equipo integra expertos en consultoría, tecnología, contabilidad y fiscalidad para cubrir 
+                todas las áreas clave de tu negocio desde una sola estructura.
+            </p>
+        </div>
+
+        <div>
+            <h3>Transparencia y Acompañamiento Constante</h3>
+            <p>
+                Nos comunicamos de forma clara, directa y continua. Acompañamos a tu empresa durante todo el proceso, 
+                asegurándonos de que comprendas cada paso y decisión.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================= -->
+<!--                         OUR PROCESS                        -->
+<!-- ========================================================= -->
+<section id="process">
+    <h2>Nuestro Proceso de Trabajo</h2>
+    <div class="process">
+        <div>
+            <h3>1. Diagnóstico Inicial</h3>
+            <p>
+                Evaluamos la situación actual de tu empresa, identificamos problemas, oportunidades y prioridades para 
+                desarrollar un plan claro y realista.
+            </p>
+        </div>
+
+        <div>
+            <h3>2. Implementación de Soluciones</h3>
+            <p>
+                Ejecutamos las estrategias definidas, incorporando herramientas tecnológicas, orden contable y planificación 
+                fiscal según las necesidades específicas del negocio.
+            </p>
+        </div>
+
+        <div>
+            <h3>3. Acompañamiento y Control</h3>
+            <p>
+                Monitoreamos los resultados, ajustamos procesos y mantenemos un seguimiento continuo para asegurar mejoras 
+                sostenibles a largo plazo.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================= -->
+<!--                           CONTACT                          -->
+<!-- ========================================================= -->
+<section class="contact" id="contact">
+    <h2>Conecta con Nosotros</h2>
+    <p>
+        Si deseas asesoramiento empresarial, contable o fiscal, puedes escribirnos directamente por correo electrónico. 
+        Estaremos encantados de ayudarte a organizar tu empresa, mejorar su rendimiento y tomar decisiones estratégicas 
+        con claridad y confianza.
+    </p>
+
+    <p><strong>Email:</strong> support@chconsultores.agency</p>
+    <p><strong>Dirección:</strong> Av Maipu 2233 Piso 3 DPTO 17, Olivos, Buenos Aires, 1636</p>
+
+    <form>
+        <label>Nombre:</label>
+        <input type="text" placeholder="Tu nombre">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Tu correo electrónico">
+
+        <label>Mensaje:</label>
+        <textarea rows="5" placeholder="Escribe tu consulta aquí..."></textarea>
+
+        <button>Enviar Mensaje</button>
+    </form>
+</section>
+
+</body>
+</html>
